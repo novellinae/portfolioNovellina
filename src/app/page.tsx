@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar";
 import AboutMe from "@/components/aboutme"; 
 import Projects from "@/components/projects";
 
+
 // import Image from "next/image";
 // import { Github, LinkedIn } from "lucide-react";
 // kalo ada error pake 'use client'
