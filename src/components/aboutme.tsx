@@ -8,7 +8,7 @@ export default function AboutMe() {
   return (
    <section id="aboutme" className="py-20">
         <div className="flex justify-center">
-            <h2 className="text-3xl font-bold mb-4 text-center border-b-4 border-third w-fit font-quantico">About Me</h2>
+            <h2 className="text-4xl font-bold mb-4 text-center border-b-4 border-third w-fit font-quantico">About Me</h2>
         </div>  
         <div className="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
           {/* Left Column */}
@@ -22,22 +22,22 @@ export default function AboutMe() {
                         <h3 className="text-2xl text-third font-semibold font-quantico">Bio</h3>
                     </div>
                     <p className="text-sm leading-relaxed font-mono mb-3">
-                        Hi! I'm Novellina Edyawati,
-                        a 3rd year Computer Science undergraduate at Binus University. I am
-                        a passionate Data Scientist and Software Engineer with a knack for transforming
-                        complex data into actionable insights. With a strong foundation in statistics, machine learning
-                        , and programming, I thrive on solving challenging problems and building impactful solutions. My
-                        expertise spans various domains, including data analysis, predictive modeling, and software development.
+                       {"Hi! I'm Novellina Edyawati,\
+                        a 3rd year Computer Science undergraduate at Binus University. I am\
+                        a passionate Data Scientist and Software Engineer with a knack for transforming\
+                        complex data into actionable insights. With a strong foundation in statistics, machine learning\
+                        , and programming, I thrive on solving challenging problems and building impactful solutions. My\
+                        expertise spans various domains, including data analysis, predictive modeling, and software development."}
                         
                     </p>
                     <p className="text-sm leading-relaxed font-mono mb-3">
-                        I enjoy collaborating with cross-functional teams to drive innovation and deliver value through data-driven decision-making.
-                        I have participated in several
-                        national and international competitions, where I gained valuable
-                        experience in teamwork, problem-solving, and critical thinking
-                        while developing solutions collaboratively. 
-                        I am excited to connect with like-minded professionals and explore
-                        opportunities to contribute my skills and expertise to impactful projects.
+                        {"I enjoy collaborating with cross-functional teams to drive innovation and deliver value through data-driven decision-making.\
+                        I have participated in several\
+                        national and international competitions, where I gained valuable\
+                        experience in teamwork, problem-solving, and critical thinking\
+                        while developing solutions collaboratively. \
+                        I am excited to connect with like-minded professionals and explore\
+                        opportunities to contribute my skills and expertise to impactful projects."}
                     </p>
                 </div>
 
@@ -62,11 +62,11 @@ export default function AboutMe() {
                 <Image src="/profile.png" alt="Profile" width={400} height={400} className="rounded-full object-cover mt-10"/>
                 {/* Skills Section */}
                 <div className="mt-10">
-                    <div className="flex items-center mb-4 space-x-2 text-third">
+                    <div className="flex items-center justify-center mb-4 space-x-2 text-third">
                         <FaTools />
                         <h3 className="text-2xl text-third font-semibold font-quantico">Skills</h3>
                     </div>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap justify-center gap-2">
                         <Image src={"/c++.svg"} alt="c++" width={40} height={40} className=""/>
                         <Image src={"/python.svg"} alt="Python" width={40} height={40} className=""/>
                         <Image src={"/java.svg"} alt="Java" width={40} height={40} className=""/>

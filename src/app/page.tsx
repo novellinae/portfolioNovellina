@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import AboutMe from "@/components/aboutme"; 
+import Projects from "@/components/projects";
 
 // import Image from "next/image";
 // import { Github, LinkedIn } from "lucide-react";
@@ -51,7 +52,13 @@ export default function Home() {
       {/* AboutMe Section */}
       <AboutMe />
       {/* Projects Section */}
-
+      <Projects/>
+      {/* Contact Section */}
+      {/* <Contact /> */}
+      {/* Footer */}
+      <footer className="w-full py-4 mt-10 text-center text-sm text-secondary font-sans">
+        &copy; {new Date().getFullYear()} Novellina Edyawati. All rights reserved.
+      </footer>
       
     </main>
   );
