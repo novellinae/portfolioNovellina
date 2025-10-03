@@ -33,6 +33,11 @@ const suse = SUSE({
   display: "swap",
 });
 
+export const mertadata: Metadata = {
+  title: "Novellina Edyawati - Portfolio",
+  description: "Welcome to my portfolio website! I'm Novellina Edyawati, a passionate Data Scientist and Software Engineer. Explore my projects, skills, and experience in transforming data into actionable insights and building impactful solutions."
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
