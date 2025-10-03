@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between px-4 md:px-20 lg:px-40 py-10 bg-primary text-secondary">
       {/* Navbar */}
-      <Navbar />
+      <Navbar />  
       {/* {Hero Section} */}
       {/* Home */}
       <section id="home" className="min-h-screen flex items-center justify-between gap-10">

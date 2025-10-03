@@ -66,7 +66,7 @@ export default function AboutMe() {
                         <FaTools />
                         <h3 className="text-2xl text-third font-semibold font-quantico">Skills</h3>
                     </div>
-                    <div className="flex flex-wrap justify-center gap-2">
+                    <div className="flex flex-wrap justify-center gap-3">
                         <Image src={"/c++.svg"} alt="c++" width={40} height={40} className=""/>
                         <Image src={"/python.svg"} alt="Python" width={40} height={40} className=""/>
                         <Image src={"/java.svg"} alt="Java" width={40} height={40} className=""/>
@@ -77,7 +77,7 @@ export default function AboutMe() {
                         <Image src={"/github.svg"} alt="github" width={40} height={40} className=""/> 
                         <Image src={"/flutter.svg"} alt="flutter" width={40} height={40} className=""/> 
                         <Image src={"/figma.svg"} alt="figma" width={40} height={40} className=""/> 
-                        <Image src={"/Tensorflow.svg"} alt="tf" width={40} height={40} className=""/> 
+                        <Image src={"/TensorFlow.svg"} alt="tensorflow" width={40} height={40} className=""/> 
                         <Image src={"/pytorch.svg"} alt="pytorch" width={40} height={40} className=""/> 
                         <Image src={"/R.png"} alt="R" width={40} height={40} className=""/> 
                         <Image src={"/wordpress.svg"} alt="wordpress" width={40} height={40} className=""/>
