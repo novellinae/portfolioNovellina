@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${quantico.variable} ${suse.variable}`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary text-secondary`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary text-secondary `}
       >
         {children}
       </body>

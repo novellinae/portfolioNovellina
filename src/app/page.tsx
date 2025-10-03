@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar";
-import AboutMe from "@/components/aboutme";
+import AboutMe from "@/components/aboutme"; 
+
 // import Image from "next/image";
 // import { Github, LinkedIn } from "lucide-react";
 // kalo ada error pake 'use client'
@@ -7,17 +8,17 @@ import AboutMe from "@/components/aboutme";
 export default function Home() {
   // usestate const[nama, setName] = useState('')
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between px-4 md:px-20 lg:px-40 py-10 bg-primary text-secondary">
       {/* Navbar */}
       <Navbar />
       {/* {Hero Section} */}
       {/* Home */}
       <section id="home" className="min-h-screen flex items-center justify-between gap-10">
         <div className="min-h-screen flex flex-col items-start justify-center bg-background text-foreground">
-          <h1 className="text-6xl font-bold mb-4 font-quantico">["Hi! I'm Novellina"]</h1>
-          <h2 className="text-2xl mb-2 font-quantico">["Data Scientist | Analyst | Software Engineer"] </h2>
+          <h1 className="text-6xl font-bold mb-4 font-quantico">{"Hi! I'm Novellina"}</h1>
+          <h2 className="text-2xl mb-2 font-quantico">{"Data Scientist | Analyst | Software Engineer"}</h2>
           <h3 className="text-lg mb-8 text-left font-mono max-w-[400px]">
-            [""Transforming data into actionable insights and building impactful solutions through modern technologies.""]
+            {"Transforming data into actionable insights and building impactful solutions through modern technologies."}
           </h3>
           {/* <Image
             src="/profile.jpg" // Ganti dengan path gambar profil Anda
