@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #4B3F6E;
+  --color-primary: #0d0525;
   --color-secondary: #dcd7d5;
   --color-third: #9C8CB9 ;
   --color-btn: #BA96C1;
@@ -13,22 +13,11 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-quantico: var(--font-quantico);
+  --font-suse : var(--font-suse)
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: var(--color-primary);
-    --color-secondary: var(--color-secondary);
-    --color-third: var(--color-third);
-    --color-btn: var(--color-btn);
-    
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
-    --font-quantico: var(--font-quantico);
-  }
-}
 
 body {
   background-color: var(--color-primary);
-  font-family: var(--font-quantico);
+  font-family: var(--font-suse);
 }

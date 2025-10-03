@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Quantico } from "next/font/google";
+import { Geist, Geist_Mono, Quantico, SUSE } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,15 +25,23 @@ const quantico = Quantico({
   display: "swap",
 }); 
 
+const suse = SUSE({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal"],
+  variable: "--font-suse-mono",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${quantico.variable}`}>
+    <html lang="en" className={`${quantico.variable} ${suse.variable}`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary text-secondary`}
       >
         {children}
       </body>
