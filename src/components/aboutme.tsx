@@ -73,7 +73,6 @@ export default function AboutMe() {
                         <Image src={"/react.svg"} alt="React" width={40} height={40} className=""/>
                         <Image src={"/typescript.svg"} alt="Typescript" width={40} height={40} className=""/>
                         <Image src={"/html5.svg"} alt="HTML" width={40} height={40} className=""/> 
-                        <Image src={"/html5.svg"} alt="HTML" width={40} height={40} className=""/> 
                         <Image src={"/css3.svg"} alt="CSS" width={40} height={40} className=""/> 
                         <Image src={"/github.svg"} alt="github" width={40} height={40} className=""/> 
                         <Image src={"/flutter.svg"} alt="flutter" width={40} height={40} className=""/> 
