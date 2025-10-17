@@ -82,11 +82,12 @@ function ProjectCard({ project }: { project: Project }) {
       key={project.id}
       className="min-h-full p-6 bg-background text-foreground rounded-lg border-2 border-btn"
       variants={cardVariants}
-      whileHover={{ scale: 1.05, boxShadow: "0px 15px 25px rgba(0,0,0,0.2)" }}
+      whileHover="hover"
       initial="hidden"
       animate="visible"
       transition={{ type: "spring", stiffness: 200, damping: 20 }}
       style={{ cursor: "pointer" }}
+      variants={hoverAnimation}
     >
       {/* Image with individual animation */}
       <motion.div
@@ -154,3 +155,4 @@ export default function Projects() {
     </section>
   );
 }
+    
