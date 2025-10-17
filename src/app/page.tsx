@@ -36,15 +36,16 @@ export default function Home() {
           <div className="flex space-x-4">
             <a
               href="#"
-              className="px-4 py-2 bg-foreground text-background rounded hover:bg-opacity-75 transition"
+              className="px-4 py-2 bg-foreground text-background rounded hover:bg-opacity-75 transition border-2 border-btn mt-6"
             >
               View Projects
             </a>
             <a
-              href="#"
-              className="px-4 py-2 bg-foreground text-background rounded hover:bg-opacity-75 transition"
+              href="/Novellina_Edyawati_CV.pdf"
+              download="Novellina_Edyawati_CV.pdf"
+              className="px-4 py-2 bg-foreground text-background rounded hover:bg-opacity-75 transition border-2 border-btn mt-6"
             >
-              Contact Me
+              Download CV
             </a>
           </div>
         </div>
