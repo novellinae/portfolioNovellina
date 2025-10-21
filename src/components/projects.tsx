@@ -81,7 +81,6 @@ function ProjectCard({ project }: { project: Project }) {
     <motion.div
       key={project.id}
       className="min-h-full p-6 bg-background text-foreground rounded-lg border-2 border-btn"
-      variants={cardVariants}
       whileHover="hover"
       initial="hidden"
       animate="visible"
