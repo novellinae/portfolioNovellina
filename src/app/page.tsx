@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/navbar";
 import AboutMe from "@/components/aboutme"; 
 import Projects from "@/components/projects";
+import { Github, Linkedin } from "lucide-react";
 
 
 // import Image from "next/image";
@@ -29,24 +30,26 @@ export default function Home() {
             height={150}
             className="rounded-full mb-4"
           /> */}
-          <div className="flex justify-center md:justify-start space-x-4 mb-8">
-            {/* <a href="#" className="text-foreground hover:text-color-btn transition-colors"><Github size={28}/></a>
-            <a href="#" className="text-foreground hover:text-color-btn transition-colors"><LinkedIn size={28}/></a> */}
-          </div>
-          <div className="flex space-x-4">
-            <a
-              href="#"
-              className="px-4 py-2 bg-foreground text-background rounded hover:bg-opacity-75 transition border-2 border-btn mt-6"
-            >
-              View Projects
-            </a>
-            <a
-              href="/Novellina_Edyawati_CV.pdf"
-              download="Novellina_Edyawati_CV.pdf"
-              className="px-4 py-2 bg-foreground text-background rounded hover:bg-opacity-75 transition border-2 border-btn mt-6"
-            >
-              Download CV
-            </a>
+          <div className="flex items-center gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
+              <a
+                href="#projects"
+                className="px-4 py-2 bg-third text-foreground rounded hover:bg-opacity-75 transition border-2 border-third mt-6"
+              >
+                View Projects
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1Ury5pfqxP72XhbmnS3lYkwB_qyrgenRa/view?usp=drive_link"
+                className="px-4 py-2 bg-third text-foreground rounded hover:bg-opacity-75 transition border-2 border-third mt-6"
+              >
+                Download CV
+              </a>
+            </div>
+            
+            <div className="flex items-center md:justify-start gap-4 mt-8 ">
+              <a href="https://github.com/novellinae" className="text-foreground hover:text-color-btn transition-colors"><Github size={28}/></a>
+              <a href="https://www.linkedin.com/in/novellina-edyawati" className="text-foreground hover:text-color-btn transition-colors"><Linkedin size={28}/></a>
+            </div>
           </div>
         </div>
       </section>
@@ -58,10 +61,17 @@ export default function Home() {
       {/* Contact Section */}
       {/* <Contact /> */}
       {/* Footer */}
-      <footer className="w-full py-4 mt-10 text-center text-sm text-secondary font-sans">
-        &copy; {new Date().getFullYear()} Novellina Edyawati. All rights reserved.
+      <footer className="w-full grid grid-cols-3 items-center py-4 mt-10 text-sm text-secondary font-sans">
+        <div></div>
+        <span className="text-gray-400 text-sm  text-center">
+          &copy; {new Date().getFullYear()} Novellina Edyawati. All rights reserved.
+        </span>
+        <div className="flex items-center justify-end gap-4">
+          <a href="https://github.com/novellinae" className="text-foreground hover:text-color-btn transition-colors"><Github size={28}/></a>
+          <a href="https://www.linkedin.com/in/novellina-edyawati" className="text-foreground hover:text-color-btn transition-colors"><Linkedin size={28}/></a>
+        </div>    
       </footer>
-      
+            
     </main>
   );
 }

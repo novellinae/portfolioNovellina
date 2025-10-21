@@ -5,6 +5,7 @@ import { Github } from "lucide-react";
 import Image from "next/image";
 import { SiGooglecolab, SiGoogledocs } from "react-icons/si";
 import { motion } from "framer-motion";
+import { Carousel } from "./ui/carousel";
 
 interface Project {
   id: number;
@@ -19,12 +20,6 @@ const containerVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.2 } },
 };
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-};
-
 
 const hoverAnimation = {
   hover: { scale: 1.05, boxShadow: "0px 15px 25px rgba(0,0,0,0.2)" },
@@ -81,7 +76,8 @@ function ProjectCard({ project }: { project: Project }) {
       animate="visible"
       transition={{ type: "spring", stiffness: 200, damping: 20 }}
       style={{ cursor: "pointer" }}
-      whileHover={hoverAnimation}
+      whileHover="hover"
+      variants={hoverAnimation}
     >
       {/* Image with individual animation */}
       <motion.div
@@ -103,7 +99,7 @@ function ProjectCard({ project }: { project: Project }) {
           {project.tags?.map((tag) => (
             <span key={tag} className="px-3 py-1 text-sm bg-[#9561ab] text-white rounded-full font-mono">
               {tag}
-            </span>
+            </span>   
           ))}
         </div>
 
@@ -117,7 +113,7 @@ function ProjectCard({ project }: { project: Project }) {
               key={link.label}
               href={link.url}
               target="_blank"
-              className="flex items-center px-3 py-1 bg-foreground text-background gap-1.5 text-base rounded-lg hover:text-third transition-colors border-2 border-btn"
+              className="flex items-center px-3 py-1 bg-background text-foreground gap-1.5 text-base rounded-lg hover:text-third transition-colors border-2 border-btn"
             >
               {link.icon}
               <span className="font-mono">{link.label}</span>
@@ -148,8 +144,8 @@ export default function Projects() {
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
-      </motion.div>
+      </motion.div> 
     </section>
-  );
+  );  
 }
     
