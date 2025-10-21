@@ -110,7 +110,7 @@ function ProjectCard({ project }: { project: Project }) {
         {/* Description */}
         <p className="text-sm leading-relaxed font-mono mb-3">{project.description}</p>
 
-        {/* Links */}
+        {/* Links */} 
         <div className="flex flex-wrap gap-2">
           {project.links?.map((link) => (
             <a
