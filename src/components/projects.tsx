@@ -77,12 +77,11 @@ function ProjectCard({ project }: { project: Project }) {
     <motion.div
       key={project.id}
       className="min-h-full p-6 bg-background text-foreground rounded-lg border-2 border-btn"
-      whileHover="hover"
       initial="hidden"
       animate="visible"
       transition={{ type: "spring", stiffness: 200, damping: 20 }}
       style={{ cursor: "pointer" }}
-      variants={hoverAnimation}
+      whileHover={hoverAnimation}
     >
       {/* Image with individual animation */}
       <motion.div
@@ -143,7 +142,7 @@ export default function Projects() {
         className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-0"
         variants={containerVariants}
         initial="hidden"
-        whileInView="visible"
+        whileInView="visible" 
         viewport={{ once: true, amount: 0.2 }}
       >
         {projects.map((project) => (
