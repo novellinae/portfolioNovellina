@@ -25,10 +25,6 @@ const cardVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
-const imageVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
-};
 
 const hoverAnimation = {
   hover: { scale: 1.05, boxShadow: "0px 15px 25px rgba(0,0,0,0.2)" },
@@ -81,18 +77,19 @@ function ProjectCard({ project }: { project: Project }) {
     <motion.div
       key={project.id}
       className="min-h-full p-6 bg-background text-foreground rounded-lg border-2 border-btn"
-      variants={cardVariants}
-      whileHover="hover"
       initial="hidden"
       animate="visible"
       transition={{ type: "spring", stiffness: 200, damping: 20 }}
       style={{ cursor: "pointer" }}
-      variants={hoverAnimation}
+      whileHover={hoverAnimation}
     >
       {/* Image with individual animation */}
       <motion.div
         className="relative w-full h-64 flex items-center justify-center mb-6 rounded-lg overflow-hidden"
-        variants={imageVariants}
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+        }}
       >
         <Image src={project.image} alt={project.title} fill className="object-cover" />
       </motion.div>
@@ -145,7 +142,7 @@ export default function Projects() {
         className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-0"
         variants={containerVariants}
         initial="hidden"
-        whileInView="visible"
+        whileInView="visible" 
         viewport={{ once: true, amount: 0.2 }}
       >
         {projects.map((project) => (
