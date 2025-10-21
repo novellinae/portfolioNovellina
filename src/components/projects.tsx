@@ -87,7 +87,7 @@ function ProjectCard({ project }: { project: Project }) {
       animate="visible"
       transition={{ type: "spring", stiffness: 200, damping: 20 }}
       style={{ cursor: "pointer" }}
-      variants={hoverAnimation}
+      hovervariants={hoverAnimation}
     >
       {/* Image with individual animation */}
       <motion.div
