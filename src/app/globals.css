@@ -1,6 +1,4 @@
 @import "tailwindcss";
-@tailwind utilities;
-
 :root {
   --color-primary: #0d0525;
   --color-secondary: #dcd7d5;
@@ -10,11 +8,13 @@
 
 @theme inline {
   --color-primary: var(--color-primary);
+  --color-foreground: var(--color-secondary);
+  --color-background: var(--color-primary);
   --color-secondary: var(--color-secondary);
   --color-third: var(--color-third);
   --color-btn: var(--color-btn);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-gei st-mono);
+  --font-mono: var(--font-geist-mono);
   --font-quantico: var(--font-quantico);
   --font-suse : var(--font-suse)
 }
