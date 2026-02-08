@@ -54,7 +54,7 @@ const projects: Project[] = [
       "TemanPeduli is a web-based crowdfunding platform designed to make fundraising more inclusive, transparent, and accessible. It features easy campaign creation, automated validation systems, transparent fund reporting, and customizable user profiles.",
     image: "/project3.png",
     tags: ["HTML", "CSS", "JavaScript", "PHP", "Blade"],
-    links: [{ label: "GitHub", url: "https://github.com/RioFerdinand/PKMKC-Crowdfunding", icon: <Github size={16} /> }],
+    links: [{ label: "GitHub", url: "https://github.com/novellinae/PKMKC-Crowdfunding", icon: <Github size={16} /> }],
   },
   {
     id: 4,
@@ -63,7 +63,16 @@ const projects: Project[] = [
       "ReBio is a mobile IoT-based application designed to monitor eco-enzyme production. It integrates sensor data with Firebase backend, tracking fermentation and biogas production in real time.",
     image: "/project4.png",
     tags: ["Dart", "Flutter", "Firebase Auth"],
-    links: [{ label: "GitHub", url: "https://github.com/kensunjaya/ReBio", icon: <Github size={16} /> }],
+    links: [{ label: "GitHub", url: "https://github.com/novellinae/ReBio", icon: <Github size={16} /> }],
+  },
+    {
+    id: 5,
+    title: "FoodHunt: Food Recommendation App",
+    description:
+      "FoodHunt is a visual-based culinary exploration platform that helps users overcome menu anxiety through a fast and intuitive swipe recommendation system. This platform also serves as an affordable digital promotional medium for culinary MSMEs to increase visibility and reach new customers.",
+    image: "/project5.png",
+    tags: ["Dart", "Flutter", "Firebase Auth"],
+    links: [{ label: "GitHub", url: "https://github.com/novellinae/FoodHunt", icon: <Github size={16} /> }],
   },
 ];
 
